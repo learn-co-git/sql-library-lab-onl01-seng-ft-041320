@@ -35,7 +35,7 @@ end
   INNER JOIN characters
   ON authors.id = characters.author_id
   WHERE characters.species = 'human'
-  GROUP BY characters.species ORDER BY series.title ASC"
+  GROUP BY series.title"
 end
 
 def select_character_names_and_number_of_books_they_are_in
